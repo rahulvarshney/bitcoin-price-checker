@@ -5,3 +5,4 @@ This project uses a public api endpoint from Coindesk. You can run the project b
 ```
 deno task start
 ```
+# bitcoin-price-checker
