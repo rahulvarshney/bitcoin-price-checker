@@ -8,48 +8,6 @@ import * as types from "@/utils/types.ts"
 //If you plan to use an api with access keys, NEVER keep them within the code.
 const url: string = "https://api.coindesk.com/v1/bpi/currentprice.json";
 
-/*export interface Price {
-  time: Time
-  disclaimer: string
-  chartName: string
-  bpi: Bpi
-}
-
-export interface Time {
-  updated: string
-  updatedISO: string
-  updateduk: string
-}
-
-export interface Bpi {
-  USD: Usd
-  GBP: Gbp
-  EUR: Eur
-}
-
-export interface Usd {
-  code: string
-  symbol: string
-  rate: string
-  description: string
-  rate_float: number
-}
-
-export interface Gbp {
-  code: string
-  symbol: string
-  rate: string
-  description: string
-  rate_float: number
-}
-
-export interface Eur {
-  code: string
-  symbol: string
-  rate: string
-  description: string
-  rate_float: number
-}*/
 
 export const handler: Handlers<Price | null> = {
   async GET(_,ctx){
