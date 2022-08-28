@@ -2,12 +2,13 @@
 import { h } from "preact";
 import { tw } from "@twind";
 import { Handlers, PageProps} from "$fresh/server.ts"
+import * as types from "@/utils/types.ts"
 
 //This is a very basic example so this is why the plain api url is here.
 //If you plan to use an api with access keys, NEVER keep them within the code.
 const url: string = "https://api.coindesk.com/v1/bpi/currentprice.json";
 
-export interface Price {
+/*export interface Price {
   time: Time
   disclaimer: string
   chartName: string
@@ -48,7 +49,7 @@ export interface Eur {
   rate: string
   description: string
   rate_float: number
-}
+}*/
 
 export const handler: Handlers<Price | null> = {
   async GET(_,ctx){
